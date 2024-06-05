@@ -46,10 +46,11 @@ const Hero = ({
               <ButtonPrimary>Get Started</ButtonPrimary>
             </div>
             <div className="flex w-full">
-              <motion.div className="h-full w-full" variants={scrollAnimation}>
+              <motion.div className="h-full w-full rounded-xl" variants={scrollAnimation}>
                 <Image
-                  src="/assets/Illustration1.png"
-                  alt="VPN Illustrasi"
+                  className="h-full w-full rounded-lg"
+                  src="/assets/Illustration3.png"
+                  alt=""
                   quality={100}
                   width={612}
                   height={383}

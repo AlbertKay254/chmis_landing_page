@@ -62,7 +62,7 @@ const Header = () => {
                 : " text-black-500 hover:text-blue-500 a")
               }
             >
-              Feature
+              Features
             </LinkScroll>
             <LinkScroll
               activeClass="active"

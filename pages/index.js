@@ -3,15 +3,18 @@ import Pricing from "../components/Pricing";
 import Hero from "../components/Hero";
 import Layout from "../components/Layout/Layout";
 import SeoHead from "../components/SeoHead";
+import Testimoni from "../components/Testimoni";
 
 export default function Home() {
   return (
     <>
+      
       <SeoHead title='CHMIS Landing Page' />
       <Layout>
         <Hero />
         <Feature />
-        <Pricing />
+        <Pricing /> 
+         
       </Layout>
     </>
   );

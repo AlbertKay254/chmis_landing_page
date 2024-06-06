@@ -12,38 +12,38 @@ const Testimoni = ({
     {
       name: "iezh Robert",
       image: "/assets/people-3.png",
-      city: "Warsaw",
-      country: "Poland",
+      facility: "Church Army",
+      county: "Nairobi",
       rating: "4.5",
       testimoni:
-        "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best",
+        "Wow... I am very happy to use CHMIS, it turned out to be more than my expectations and so far there have been no problems.",
     },
     {
       name: "iezh Robert",
       image: "/assets/people-3.png",
-      city: "Warsaw",
-      country: "Poland",
+      facility: "PCEA",
+      county: "Mombasa",
       rating: "4.5",
       testimoni:
-        "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best",
+      "Wow... I am very happy to use CHMIS, it turned out to be more than my expectations and so far there have been no problems."
     },
     {
       name: "iezh Robert",
       image: "/assets/people-3.png",
-      city: "Warsaw",
-      country: "Poland",
+      facility: "Nyanchwa",
+      county: "Kisii",
       rating: "4.5",
       testimoni:
-        "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best",
+      "Wow... I am very happy to use CHMIS, it turned out to be more than my expectations and so far there have been no problems."
     },
     {
       name: "iezh Robert",
       image: "/assets/people-3.png",
-      city: "Warsaw",
-      country: "Poland",
+      facility: "Kayole",
+      county: "Nairobi",
       rating: "4.5",
       testimoni:
-        "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best",
+      "Wow... I am very happy to use CHMIS, it turned out to be more than my expectations and so far there have been no problems."
     },
   ],
 }) => {
@@ -105,7 +105,7 @@ const Testimoni = ({
                       {listTestimonis.name}
                     </p>
                     <p className="text-sm text-black-500 capitalize">
-                      {listTestimonis.city},{listTestimonis.country}
+                      {listTestimonis.facility},{listTestimonis.county}
                     </p>
                   </div>
                 </div>

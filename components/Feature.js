@@ -49,7 +49,7 @@ const Feature = () => {
 
         <motion.div className="flex flex-col items-end justify-center ml-auto w-full lg:w-9/12" variants={scrollAnimation}>
           <h3 className="text-3xl lg:text-4xl font-medium leading-relaxed text-black-600">
-            We Provide Many Services and System Modules You Can Use
+            We Provide Many Services and Features You Can Use
           </h3>
           <p className="my-2 text-black-500">
             You can explore the features that we provide and have their
@@ -82,7 +82,7 @@ const Feature = () => {
 
         <motion.div className="flex flex-col items-start  w-full lg:w-9/12" variants={scrollAnimation}>
           <h3 className="text-3xl lg:text-4xl font-medium leading-relaxed text-black-600">
-          We Provide Many Services and System Modules You Can Use
+          We Provide a Variety of System Modules You Can Use
           </h3>
           <p className="my-2 text-black-500">
             You can explore the different modules in the system that
@@ -110,15 +110,15 @@ const Feature = () => {
         </ScrollAnimationWrapper>
 
         <ScrollAnimationWrapper className="flex w-full justify-end">
-          <motion.div className="h-full w-full p-4" variants={scrollAnimation}>
+          <motion.div className="h-full w-full " variants={scrollAnimation}>
             <Image
               className="rounded-lg"
-              src="/assets/Illustration5.png"
-              alt=""
+              src="/assets/dash2.png"
+              alt="dashboard"
               layout="responsive"
               quality={100}
-              height={414}
-              width={600}
+              height={550}
+              width={700}
             />
           </motion.div>
         </ScrollAnimationWrapper>

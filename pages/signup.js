@@ -4,7 +4,7 @@ import {motion} from "framer-motion";
 import getScrollAnimation from '../utils/getScrollAnimation';
 import ScrollAnimationWrapper from '../components/Layout/ScrollAnimationWrapper';
 import ButtonPrimary from '../components/misc/ButtonPrimary';
-
+//import { SnackbarProvider, useSnackbar } from 'notistack';
 
 const Signup = () => {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
@@ -28,7 +28,7 @@ const Signup = () => {
             <div className="flex w-full">
               <motion.div className="h-full w-full rounded-xl" variants={scrollAnimation}>
                 <div className=" flex flex-col justify-center items-start row-start-2 sm:row-start-2">
-                  <form>
+                  <form >
                   <label className="mb-2 font-bold text-black-600 mr-2 block" htmlFor="email">Email:</label>
                   <input 
                     type="text"

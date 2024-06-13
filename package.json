@@ -1,9 +1,9 @@
 {
-  "name": "next-landing-vpn",
+  "name": "chmis_landing_page",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 3009",
     "build": "next build",
     "start": "next start",
     "export": "next build && next export"
@@ -13,6 +13,7 @@
     "autoprefixer": "^10.4.12",
     "framer-motion": "6.0.0",
     "next": "^12.3.1",
+    "notistack": "^3.0.1",
     "postcss": "^8.4.17",
     "postcss-import": "^13.0.0",
     "react": "^17.0.2",

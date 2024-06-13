@@ -5,8 +5,16 @@ import { Link as LinkScroll } from "react-scroll";
 import ButtonOutline from "../misc/ButtonOutline.";
 import Logo from "../../public/assets/chaklogo.svg";
 import ChakLogo from "../../public/assets/chaklogo.svg"
+import Signup from "../../pages/signup";
+import { useRouter } from 'next/router';
 
 const Header = () => {
+
+  const router = useRouter();
+  const handleSignUp = () => {
+    router.push('/signup'); 
+  };
+
   const [activeLink, setActiveLink] = useState(null);
   const [scrollActive, setScrollActive] = useState(false);
   useEffect(() => {
@@ -102,12 +110,13 @@ const Header = () => {
             </LinkScroll>
           </ul>
           <div className="col-start-10 col-end-12 font-medium flex justify-end items-center">
-            <Link href="/">
-              <a className="text-black-600 mx-2 sm:mx-4 capitalize tracking-wide hover:text-blue-100 transition-all">
-                  Sign In
-              </a>
-            </Link>
-            <ButtonOutline>Sign Up</ButtonOutline>
+          <Link href="http://192.168.1.20:8445/chmis">
+            <a className="text-black-600 mx-2 sm:mx-4 capitalize tracking-wide hover:text-blue-100 transition-all" target="_blank">
+              Demo
+            </a>
+          </Link>
+
+            <ButtonOutline onClick={handleSignUp}>Sign Up</ButtonOutline>
           </div>
         </nav>
       </header>

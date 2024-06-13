@@ -32,9 +32,6 @@ const Footer = () => {
           <p className="text-black-600 mb-4 font-medium text-lg">Product</p>
           <ul className="text-black-500 ">
             <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
-              Download{" "}
-            </li>
-            <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
               Pricing{" "}
             </li>
             <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
@@ -44,7 +41,7 @@ const Footer = () => {
               Server{" "}
             </li>
             <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
-              Countries{" "}
+              Counties{" "}
             </li>
             <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
               Blog{" "}
@@ -55,13 +52,10 @@ const Footer = () => {
           <p className="text-black-600 mb-4 font-medium text-lg">Engage</p>
           <ul className="text-black-500">
             <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
-              LaslesVPN ?{" "}
-            </li>
-            <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
               FAQ{" "}
             </li>
             <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
-              Tutorials{" "}
+              Demo{" "}
             </li>
             <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
               About Us{" "}
@@ -74,17 +68,7 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className="row-span-2 sm:col-span-2 sm:col-start-11 sm:col-end-13 flex flex-col">
-          <p className="text-black-600 mb-4 font-medium text-lg">Earn Money</p>
-          <ul className="text-black-500">
-            <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
-              Affiliate{" "}
-            </li>
-            <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
-              Become Partner{" "}
-            </li>
-          </ul>
-        </div>
+        
       </div>
     </div>
   );

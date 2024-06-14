@@ -11,10 +11,10 @@ const defaultMeta = {
   // change base url of your web (without '/' at the end)
   url: 'https://chmis-landing-page.vercel.app/',
   type: 'website',
-  robots: 'follow, index',
+  //robots: 'follow, index',
   // change with url of your image (recommended dimension = 1.91:1)
   // used in twitter, facebook, etc. card when link copied in tweet/status 
-  //image: '../public/assets/chak_logo.png',
+  image:'public/assets/chaklogo.svg',
   author: 'CHMIS'
 };
 
@@ -60,13 +60,13 @@ const SeoHead = (props) => {
       <meta property='og:site_name' content={meta.siteName} />
       <meta property='og:description' content={meta.description} />
       <meta property='og:title' content={meta.title} />
-      <meta name='image' property='og:image' content={meta.image} />
+      <meta name='image' property='og:image' content='public/assets/chaklogo.svg' />
       {/* Twitter */}
       <meta name='twitter:card' content='summary_large_image' />
       <meta name='twitter:site' content='@F2aldi' />
       <meta name='twitter:title' content={meta.title} />
       <meta name='twitter:description' content={meta.description} />
-      <meta name='twitter:image' content={meta.image} />
+      <meta property="og:image" content='public/assets/chaklogo.svg' />
       {meta.date && (
         <>
           <meta property='article:published_time' content={meta.date} />

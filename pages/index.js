@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       
-      <SeoHead title='CHMIS Landing Page' />
+      <SeoHead title='CHMIS Landing Page' image='https://www.chak.or.ke/images/logo.png'/>
       <Layout>
         <Hero />
         <Feature />

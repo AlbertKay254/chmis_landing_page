@@ -16,7 +16,7 @@ class MyDocument extends Document {
             rel="stylesheet"
           />
           <link rel="icon" href="assets/chaklogo.svg" sizes="any" />
-
+          <meta property="og:image" content="https://www.chak.or.ke/images/logo.png" />
         </Head>
         <body>
           <Main />

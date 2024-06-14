@@ -9,13 +9,13 @@ const defaultMeta = {
   description:
     'Landing page for CHMIS',
   // change base url of your web (without '/' at the end)
-  url: 'https://next-landing-vpn.vercel.app',
+  url: 'https://chmis-landing-page.vercel.app/',
   type: 'website',
   robots: 'follow, index',
   // change with url of your image (recommended dimension = 1.91:1)
   // used in twitter, facebook, etc. card when link copied in tweet/status 
-  image: 'https://next-landing-vpn.vercel.app/assets/card-image.png',
-  author: 'Lorem Ipsum'
+  //image: '../public/assets/chak_logo.png',
+  author: 'CHMIS'
 };
 
 /**

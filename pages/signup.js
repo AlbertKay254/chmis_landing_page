@@ -4,11 +4,42 @@ import {motion} from "framer-motion";
 import getScrollAnimation from '../utils/getScrollAnimation';
 import ScrollAnimationWrapper from '../components/Layout/ScrollAnimationWrapper';
 import ButtonPrimary from '../components/misc/ButtonPrimary';
+//import nodemailer from 'nodemailer';
 //import { SnackbarProvider, useSnackbar } from 'notistack';
 
 const Signup = () => {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
 
+  // const handleSignUp = async (e) => {
+  //   e.preventDefault();
+  //   const emailInput = document.getElementById('email').value;
+
+  //   // Create a Nodemailer transporter
+  //   const transporter = nodemailer.createTransport({
+  //     service: 'Outlook', // e.g., 'Gmail'
+  //     auth: {
+  //       user: 'jmuhlanga@chak.or.ke',
+  //       pass: '@Wr8xsd6k',
+  //     },
+  //   });
+
+  //   // Construct the email
+  //   const mailOptions = {
+  //     from: 'jmuhlanga@chak.or.ke',
+  //     to: 'itinterns@chak.or.ke',
+  //     subject: 'New Sign-Up',
+  //     text: `User with email ${emailInput} signed up.`,
+  //   };
+
+  //   // Send the email
+  //   try {
+  //     await transporter.sendMail(mailOptions);
+  //     console.log('Email sent successfully!');
+  //   } catch (error) {
+  //     console.error('Error sending email:', error);
+  //   }
+  // }
+  
   return (
     <div className='max-w-screen-xl mt-24 px-8 sm:px-8 xl:px-16 mx-auto'>
       <motion.div

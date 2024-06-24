@@ -4,27 +4,34 @@ import ButtonPrimary from "./misc/ButtonPrimary";
 import {motion} from "framer-motion";
 import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
+import { useRouter } from 'next/router';
 
 const Hero = ({
   listUser = [
     {
-      name: "Users",
-      number: "390",
+      name: "Facilities",
+      number: "20",
       icon: "/assets/Icon/heroicons_sm-user.svg",
     },
     {
-      name: "Locations",
-      number: "20",
+      name: "Counties",
+      number: "10",
       icon: "/assets/Icon/gridicons_location.svg",
     },
     {
-      name: "Server",
-      number: "50",
+      name: "Servers",
+      number: "10",
       icon: "/assets/Icon/bx_bxs-server.svg",
     },
   ],
 }) => {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
+
+  const router = useRouter();
+  const handleSignUp = () => {
+    router.push('/signup'); 
+  };
+
 
   return (
     <div
@@ -43,7 +50,7 @@ const Hero = ({
                 We provide a system for all your hospital needs with ease using<br/>
                 CHMIS (CHAK Hospital Management Information System).
               </p>
-              <ButtonPrimary>Get Started</ButtonPrimary>
+              <ButtonPrimary onClick={handleSignUp} >Get Started</ButtonPrimary>
             </div>
             <div className="flex w-full">
               <motion.div className="h-full w-full rounded-xl" variants={scrollAnimation}>

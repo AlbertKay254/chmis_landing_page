@@ -6,6 +6,7 @@ export default function NewUser() {
     FirstName: '',
     lastName: '',
     Email: '',
+    Facility: ''
   });
 
   const handleChange = (e) => {
@@ -28,7 +29,7 @@ export default function NewUser() {
       });
       if (response.ok) {
         alert('User added successfully!');
-        setFormData({ FirstName: '', lastName: '', Email: '' });
+        setFormData({ FirstName: '', lastName: '', Email: '' , Facility: ''});
       } else {
         alert('Failed to add user.');
       }
@@ -71,6 +72,17 @@ export default function NewUser() {
             id="Email"
             name="Email"
             value={formData.Email}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        <div>
+          <label htmlFor="Facility">Facility:</label>
+          <input
+            type="email"
+            id="Facility"
+            name="Facility"
+            value={formData.Facility}
             onChange={handleChange}
             required
           />

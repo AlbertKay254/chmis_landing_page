@@ -29,8 +29,7 @@ const Pricing = () => {
               variants={scrollAnimation}
               className="leading-normal w-10/12 sm:w-7/12 lg:w-6/12 mx-auto my-2 text-center"
             >
-              Let's choose the package that is best for you and explore it happily
-              and cheerfully.
+              Let's choose the package that is best for you and your facility
             </motion.p>
           </ScrollAnimationWrapper>
           <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-3 gap-4 lg:gap-12 py-8 lg:py-12 px-6 sm:px-0 lg:px-6">
@@ -66,7 +65,7 @@ const Pricing = () => {
                 </ul>
                 <div className="flex flex-col w-full justify-center mb-8 flex-none mt-12">
                   <p className="text-2xl text-black-600 text-center mb-4 ">
-                    Free
+                    
                   </p>
                   <ButtonOutline>Select</ButtonOutline>
                 </div>
@@ -110,7 +109,7 @@ const Pricing = () => {
               </ul>
               <div className="flex flex-col w-full justify-center mb-8 flex-none mt-12">
                 <p className="text-2xl text-black-600 text-center mb-4 ">
-                  $9 <span className="text-black-500">/ mo</span>
+                 <span className="text-black-500">/ mo</span>
                 </p>
                 <ButtonOutline>Select</ButtonOutline>
               </div>
@@ -160,7 +159,7 @@ const Pricing = () => {
               </ul>
               <div className="flex flex-col w-full justify-center mb-8 flex-none mt-12">
                 <p className="text-2xl text-black-600 text-center mb-4 ">
-                  $12 <span className="text-black-500">/ mo</span>
+                 <span className="text-black-500">/ mo</span>
                 </p>
 
                 <ButtonOutline>Select</ButtonOutline>

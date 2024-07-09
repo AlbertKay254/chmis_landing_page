@@ -1,0 +1,4 @@
+1. install nodejs on the server
+2. in the terminal inside the chmis_landing_page directory run 
+	-npm i: to install all dependencies
+	-npm run dev: this starts the application on localhost:3009

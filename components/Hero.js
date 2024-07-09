@@ -29,7 +29,7 @@ const Hero = ({
 
   const router = useRouter();
   const handleSignUp = () => {
-    router.push('/signup'); 
+    router.push('/test-user'); 
   };
 
 

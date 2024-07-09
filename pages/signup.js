@@ -11,58 +11,43 @@ const Signup = () => {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
 
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-   // message: ''
-  })
+    FirstName: '',
+    lastName: '',
+    Email: '',
+  });
 
   const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
+    const { name, value } = e.target;
+    setFormData((prevState) => ({
+      ...prevState,
+      [name]: value,
+    }));
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch('/api/send-email', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(formData)
-    });
-    if (response.ok) {
-      alert('Email sent successfully!');
-    } else {
-      alert('Failed to send email.');
+    try {
+      const response = await fetch('/api/users', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+      if (response.ok) {
+        alert('User added successfully!');
+        setFormData({ FirstName: '', lastName: '', Email: '' });
+      } else {
+        alert('Failed to add user.');
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      alert('An error occurred.');
     }
   };
 
-  // const handleSignUp = async (e) => {
-  //   e.preventDefault();
-  //   const emailInput = document.getElementById('email').value;
 
-  //   try {
-  //     const response = await fetch('/api/send-email', {
-  //       method: 'POST',
-  //       headers: {
-  //         'Content-Type': 'application/json',
-  //       },
-  //       body: JSON.stringify({ email: emailInput }),
-  //     });
 
-  //     if (response.ok) {
-  //       alert('Email sent successfully!');
-  //     } else {
-  //       alert('Failed to send email.');
-  //     }
-  //   } catch (error) {
-  //     console.error('Error sending email:', error);
-  //     alert('An error occurred while sending the email.');
-  //   }
-  // };
-  
   return (
     <div className='max-w-screen-xl mt-24 px-8 sm:px-8 xl:px-16 mx-auto'>
       <motion.div
@@ -73,7 +58,7 @@ const Signup = () => {
                 Want access to <strong>CHMIS</strong>.
               </h1>
               <p className="text-black-500 mt-4 mb-10">
-                Sign Up with your email and a password will be sent to you
+                Sign Up with your email and a password will be sent to your email
                 to grant you access to our chmis demo
               </p>
               { /* <ButtonPrimary>Sign Up</ButtonPrimary> */}
@@ -83,21 +68,30 @@ const Signup = () => {
               <motion.div className="h-full w-full rounded-xl" variants={scrollAnimation}>
                 <div className=" flex flex-col justify-center items-start row-start-2 sm:row-start-2">
                   <form onSubmit={handleSubmit}>
-                  <label className="mb-2 font-bold text-black-600 mr-2 block" htmlFor="name">Facility Name:</label>
+                  <label className="mb-2 font-bold text-black-600 mr-2 block" htmlFor="FirstName">First Name:</label>
                   <input 
                     type="text"
-                    id="name" 
-                    name="name" 
-                    value={formData.name} 
+                    id="FirstName" 
+                    name="FirstName" 
+                    value={formData.FirstName} 
                     onChange={handleChange}
                     className="p-2 border border-blue-300 rounded mr-5 w-full sm:w-auto sm:mb-5 w-full sm:w-64 "
                     required />
-                  <label className="mb-2 font-bold text-black-600 mr-2 block" htmlFor="email">Email:</label>
+                  <label className="mb-2 font-bold text-black-600 mr-2 block" htmlFor="lastName">Last Name:</label>
+                  <input 
+                    type="text"
+                    id="lastName" 
+                    name="lastName" 
+                    value={formData.lastName} 
+                    onChange={handleChange}
+                    className="p-2 border border-blue-300 rounded mr-5 w-full sm:w-auto sm:mb-5 w-full sm:w-64 "
+                    required />
+                  <label className="mb-2 font-bold text-black-600 mr-2 block" htmlFor="Email">Email:</label>
                   <input 
                     type="email"
-                    id="email" 
-                    name="email" 
-                    value={formData.email} 
+                    id="Email" 
+                    name="Email" 
+                    value={formData.Email} 
                     onChange={handleChange}
                     className="p-2 border border-blue-300 rounded mr-5 w-full sm:w-auto sm:mb-5 w-full sm:w-64"
                     required />

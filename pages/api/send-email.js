@@ -13,7 +13,7 @@ export default async function handler(req, res) {
     secure: false, // true for 465, false for other ports
     auth: {
       user: 'itinterns@chak.or.ke', 
-      pass: 'Hmis2024', 
+      pass: '********', 
     },
   });
 

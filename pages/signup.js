@@ -36,6 +36,16 @@ const Signup = () => {
       if (response.ok) {
         alert('User added successfully!');
         setFormData({ FirstName: '', lastName: '', Email: '', Facility: '' });
+
+          // Send notification email
+          await fetch('/api/send-email', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(formData),
+          });
+
       } else {
         alert('Failed to add user.');
       }

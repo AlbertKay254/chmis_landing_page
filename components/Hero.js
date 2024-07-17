@@ -32,7 +32,6 @@ const Hero = ({
     router.push('/signup'); 
   };
 
-
   return (
     <div
       className="max-w-screen-xl mt-24 px-8 xl:px-16 mx-auto"

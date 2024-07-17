@@ -7,9 +7,15 @@ import Maps from "../public/assets/HugeGlobal.svg";
 import { motion } from "framer-motion";
 import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
+import { useRouter } from "next/router";
 
 const Pricing = () => {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
+
+  const router = useRouter();
+  const handleSignUp = () => {
+    router.push('/signup'); 
+  };
 
   return (
     <div
@@ -247,7 +253,7 @@ const Pricing = () => {
                   </h5>
                   <p>Subscribe with us.</p>
                 </div>
-                <ButtonPrimary>Get Started</ButtonPrimary>
+                <ButtonPrimary onClick={handleSignUp}>Get Started</ButtonPrimary>
               </div>
               <div
                 className="absolute bg-black-600 opacity-5 w-11/12 roudned-lg h-60 sm:h-56 top-0 mt-8 mx-auto left-0 right-0"

@@ -57,7 +57,7 @@ const Signup = () => {
   return (
     <div 
       style={{
-      backgroundImage: 'url(/assets/bg9.png)',
+      backgroundImage: 'url(/assets/bg9.jpg)',
       backgroundSize: 'cover',
       //backgroundPosition: 'center',
       backgroundRepeat: 'no-repeat',
@@ -115,7 +115,7 @@ const Signup = () => {
                   className="p-2 border border-blue-300 rounded mr-5 w-full sm:w-auto sm:mb-5 w-full sm:w-64"
                   required
                 />
-                <label className="mb-2 font-bold text-black-600 mr-2 block " htmlFor="Facility">Facility:</label>
+                <label className="mb-2 font-bold text-black-600 mr-2 block " htmlFor="Facility">Facility/Organization:</label>
                 <input
                   type="text"
                   id="Facility"

@@ -13,10 +13,9 @@ export default async function handler(req, res) {
     secure: false, // true for 465, false for other ports
     auth: {
       user: 'itinterns@chak.or.ke', 
-      pass: '********', 
+      pass: 'Hmis2024', 
     },
   });
-
 
     const mailOptions = {
       from: 'itinterns@chak.or.ke', 

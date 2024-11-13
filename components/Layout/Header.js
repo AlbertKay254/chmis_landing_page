@@ -116,7 +116,10 @@ const Header = () => {
             </a>
           </Link>
 
-            <ButtonOutline href="http://192.168.1.10:3010/dev/signup">Sign Up</ButtonOutline>
+            <Link href="http://192.168.1.10:3010/dev/signup" passHref>
+              <ButtonOutline>Sign Up</ButtonOutline>
+            </Link>
+                
           </div>
         </nav>
       </header>

@@ -116,7 +116,7 @@ const Header = () => {
             </a>
           </Link>
 
-            <ButtonOutline onClick={handleSignUp}>Sign Up</ButtonOutline>
+            <ButtonOutline href="http://192.168.1.10:3010/dev/signup">Sign Up</ButtonOutline>
           </div>
         </nav>
       </header>

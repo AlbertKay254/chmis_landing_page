@@ -117,7 +117,7 @@ const Header = () => {
           </Link>
 
             <Link href="http://192.168.1.10:3010/dev/signup" passHref>
-             <a className="text-black-600 mx-2 sm:mx-4 capitalize tracking-wide hover:text-blue-100 transition-all" target="_blank">
+             <a className="text-black-600 mx-2 sm:mx-4 capitalize tracking-wide hover:text-blue-100 transition-all">
               Signup
             </a>
             </Link>

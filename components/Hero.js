@@ -49,7 +49,9 @@ const Hero = ({
                 We provide a system for all your hospital needs with ease using<br/>
                 CHMIS (CHAK Hospital Management Information System).
               </p>
-              <ButtonPrimary onClick={handleSignUp} >Get Started</ButtonPrimary>
+              <ButtonPrimary onClick={() => (window.location.href = 'http://192.168.1.10:3010/dev/signup')}>
+                Get Started
+              </ButtonPrimary>
             </div>
             <div className="flex w-full">
               <motion.div className="h-full w-full rounded-xl" variants={scrollAnimation}>

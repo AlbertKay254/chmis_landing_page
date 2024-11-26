@@ -49,6 +49,7 @@ const Footer = () => {
             <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
               Blog{" "}
             </li>
+           <script defer src="https://app.fastbots.ai/embed.js" data-bot-id="cm0qiajf70ct4svbih9kaw21y"></script>
           </ul>
         </div>
         <div className="row-span-2 sm:col-span-2 sm:col-start-9 sm:col-end-11 flex flex-col">

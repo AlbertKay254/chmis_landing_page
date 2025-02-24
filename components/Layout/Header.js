@@ -110,7 +110,7 @@ const Header = () => {
             </LinkScroll>
           </ul>
           <div className="col-start-10 col-end-12 font-medium flex justify-end items-center">
-          <Link href="http://192.168.1.10:8445/chmis">
+          <Link href="http://197.232.14.151:8445/CarePortal">
             <a className="text-black-600 mx-2 sm:mx-4 capitalize tracking-wide hover:text-orange-500 transition-all" target="_blank">
               Demo
             </a>
